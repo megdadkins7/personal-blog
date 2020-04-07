@@ -1,10 +1,13 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 
+import GlobalStyles from '../styles/GlobalStyles'
+
 export default function Template({ data }) {
   const post = data.markdownRemark
   return (
     <div>
+      <GlobalStyles />
       <Link to='/blog'>Back</Link>
       <hr />
       <h1>{post.frontmatter.title}</h1>

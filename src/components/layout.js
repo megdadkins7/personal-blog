@@ -13,6 +13,8 @@ import Menu from './menu'
 import Header from "./header"
 import "./layout.css"
 
+import GlobalStyles from '../styles/GlobalStyles'
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -27,6 +29,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
+      <GlobalStyles />
       <Menu />
       <div
         style={{

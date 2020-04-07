@@ -1,6 +1,6 @@
 ---
 path: "/post-two"
-date: "202-04-07"
+date: "04/07/2020"
 title: "Second Post"
 author: "Meghan Adkins"
 ---

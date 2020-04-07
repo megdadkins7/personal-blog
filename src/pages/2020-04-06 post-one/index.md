@@ -1,6 +1,6 @@
 ---
 path: "/post-one"
-date: "202-04-06"
+date: "04/06/2020"
 title: "First Post"
 author: "Meghan Adkins"
 ---
