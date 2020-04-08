@@ -28,9 +28,11 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
       <GlobalStyles />
+      <div style={{display: 'flex', justifyContent: 'space-between', marginLeft: '50px'}}>
+      <Header siteTitle={data.site.siteMetadata.title} />
       <Menu />
+      </div>
       <div
         style={{
           margin: `0 auto`,
@@ -40,9 +42,8 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          Reach out to me on
+          <a href="https://twitter.com/MegDAdkins" target="blank"> Twitter!</a>
         </footer>
       </div>
     </>

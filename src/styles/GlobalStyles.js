@@ -17,6 +17,7 @@ const GlobalStyles = createGlobalStyle`
         font-size: 1.5rem;
         font-weight: 400;
         background: white;
+        color: #4C4D4E;
         -webkit-font-smoothing: antialiased; /* trick for smoother fonts */
         -moz-osx-font-smoothing: grayscale; /* trick for smoother fonts */
     }
