@@ -2,10 +2,12 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
+import SEO from "../components/seo"
 
 function BlogPage({ data }) {
   return (
     <Layout>
+      <SEO title="Blog" />
       <h1>Latest Posts</h1>
       {data.allMarkdownRemark.edges.map(post => (
         <div key={ post.node.id }>
@@ -25,19 +27,21 @@ function BlogPage({ data }) {
 
 export const pageQuery = graphql`
   query BlogIndexQuery {
-    allMarkdownRemark {
-      edges {
-        node {
-          id
-          frontmatter {
-            path
-            title
-            date
-            author
+    allMarkdownRemark
+      (sort: { fields: [frontmatter___date], order: DESC })
+      {
+        edges{
+          node{
+            id
+            frontmatter{
+              path
+              title
+              date
+              author
+            }
           }
         }
       }
-    }
   }
 `
 

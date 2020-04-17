@@ -13,6 +13,8 @@ import Menu from './menu'
 import Header from "./header"
 import "./layout.css"
 
+import "typeface-raleway"
+
 import GlobalStyles from '../styles/GlobalStyles'
 
 const Layout = ({ children }) => {
