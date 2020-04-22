@@ -10,13 +10,13 @@ function Menu() {
         padding: `1.45rem 1.0875rem`,}}>
       <ul style={{listStyleType: 'none', display: 'flex', justifyContent: 'flex-end', marginRight: '100px'}}>
         <li style={{ marginRight: '50px', color: '#B0B5B3'}}>
-          <Link to='/'>Home</Link>
+          <Link to='/'>home</Link>
         </li>
         <li style={{color: '#B0B5B3'}}>
-          <Link to='/about'>About</Link>
+          <Link to='/about'>about</Link>
         </li>
         <li style={{marginLeft: '50px', color: '#B0B5B3'}}>
-          <Link to='/blog'>Blog</Link>
+          <Link to='/blog'>blog</Link>
         </li>
       </ul>
       </div>

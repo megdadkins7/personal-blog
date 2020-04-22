@@ -16,12 +16,18 @@ const GlobalStyles = createGlobalStyle`
         font-size: 1.5rem;
         font-weight: 400;
         background: white;
-        color: #4C4D4E;
+        color: #6B6175;
         -webkit-font-smoothing: antialiased; /* trick for smoother fonts */
         -moz-osx-font-smoothing: grayscale; /* trick for smoother fonts */
     }
     a {
         text-decoration: none;
+    }
+    a:visited {
+        color: #FF647D;
+    }
+    a:hover {
+        color: #7AD6D4;
     }
 `;
 

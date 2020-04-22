@@ -1,8 +1,14 @@
 ---
-path: "/post-three"
+path: "/resumes"
 date: "04/08/2020"
-title: "Third Post"
+title: "Let's Talk About Resumes"
 author: "Meghan Adkins"
 ---
 
-This is my third blog post in Gatsby.
+Resumes... they're already hard enough as it is.
+
+Now you have to figure out how to put together a resume for a job you have no experience in whatsoever.
+
+You're college degree has nothing to do with coding, you've had no internships, and you're career path isn't even related to technology.
+
+How are you supposed to work up the courage to apply let alone right your resume?
