@@ -13,6 +13,10 @@ import Menu from './menu'
 import Header from "./header"
 import "./layout.css"
 
+import "typeface-raleway"
+
+import GlobalStyles from '../styles/GlobalStyles'
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -26,8 +30,11 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <GlobalStyles />
+      <div style={{display: 'flex', justifyContent: 'space-between', marginLeft: '50px'}}>
       <Header siteTitle={data.site.siteMetadata.title} />
       <Menu />
+      </div>
       <div
         style={{
           margin: `0 auto`,
@@ -36,11 +43,6 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
       </div>
     </>
   )

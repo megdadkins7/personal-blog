@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Blog`,
-    description: `My first Gatsby project.`,
+    title: `Meghan Adkins`,
+    description: `A personal blog about my journey learning to code.`,
     author: `Meghan Adkins`,
   },
   plugins: [
@@ -24,7 +24,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/m.jpg`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-catch-links`,
@@ -35,7 +35,13 @@ module.exports = {
         name: 'pages'
       }
     },
-    `gatsby-transformer-remark`
+    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        displayName: false
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
