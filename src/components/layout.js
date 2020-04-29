@@ -43,10 +43,6 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-          Reach out to me on
-          <a href="https://twitter.com/MegDAdkins" target="blank"> Twitter!</a>
-        </footer>
       </div>
     </>
   )
